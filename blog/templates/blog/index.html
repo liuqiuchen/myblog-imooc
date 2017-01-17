@@ -5,8 +5,50 @@
     <title>Title</title>
 </head>
 <body>
+<button>
+    <a href="{% url 'blog:edit_page' %}">添加新文章</a>
+</button>
+<br>
 
-<h1>{{ article.title }}</h1>
-<h3>{{ article.content }}</h3>
+{% for article in articles %}
+<a href="{% url 'blog:article_page' article.id %}">{{ article.title }}</a>
+<br>
+{% endfor %}
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
