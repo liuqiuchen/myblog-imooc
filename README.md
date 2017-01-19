@@ -44,7 +44,11 @@ https://docs.djangoproject.com/en/1.10/ref/models/fields/
 创建用户
 `python manage.py createsuperuser` // 创建超级用户
 
-改变后台管理系统为中文：修改`settings.py`中的LANGUAGE_CODE = 'zh-Hans'
+改变后台管理系统为中文：修改`settings.py`中的LANGUAGE_CODE = 'zh-Hans'  
+
+###Django Shell  
+
+python manage.py shell
 
 
 
